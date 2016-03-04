@@ -42,7 +42,7 @@ function hideLoginScreen() {
 }
 
 function showMainScreen() {
-	alert("Приветствую!")
+	alert("Порево!")
 	if (currentScreen === 'scoreboard') {
 		hideScoreboardScreen();
 	} else if (currentScreen === 'game') {

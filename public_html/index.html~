@@ -13,9 +13,13 @@
 	<script src="js/tmpl/game.js"></script>
 	<script src="js/tmpl/scoreboard.js"></script>
 	<script src="/gamescreens.js"></script>
-	
+	<style>
+		body{background: url(/Image/picture.jpg) no-repeat;
+			background-size:100%;
+		}
+	</style>
 </head>
-<body>
+<body  background-size=100%>
   	   	
 	<script>
 		var $page = $('#page');

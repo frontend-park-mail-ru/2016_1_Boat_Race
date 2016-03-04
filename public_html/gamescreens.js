@@ -1,8 +1,7 @@
 var $page = $('#page'),
 currentScreen = 'main';
-showMainScreen;
 
-function showScoreboardScreen() {
+function showScoreBoardScreen() {
 	
 	hideMainScreen(); 
 	currentScreen = 'scoreboard';
@@ -10,7 +9,7 @@ function showScoreboardScreen() {
 	$page.find('.js-back').on('click', showMainScreen);
 }
 
-function hideScoreboardScreen() {
+function hideScoreBoardScreen() {
 	
 	$page.find('.js-back').off('click', showMainScreen)
 }
@@ -42,7 +41,7 @@ function hideLoginScreen() {
 }
 
 function showMainScreen() {
-	alert("Приветствую!")
+
 	if (currentScreen === 'scoreboard') {
 		hideScoreboardScreen();
 	} else if (currentScreen === 'game') {
