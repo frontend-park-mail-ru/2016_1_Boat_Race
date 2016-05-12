@@ -1,0 +1,88 @@
+body {
+	background: url(/Image/picture.jpg) no-repeat;
+	background-size: 100%;
+}
+.menu {
+
+	margin:20% auto;
+	width:50%;
+}
+.menu_button {
+
+	margin:0 auto;
+	width:75%;
+	height: 60px;
+	border-radius: 15px;
+	background: blue;
+	font: 8pt, Arial, yellow;
+	color: yellow;	
+	font-size: 18pt;
+}
+.scoreboard {
+
+	margin:0 auto;
+	width:60%	
+}
+.scoreboard_name {
+
+	color: red;
+	font-size:24pt; 
+}
+.scoreboard_backbutton {
+
+	width:25%;
+	height: 50px;
+	border-radius: 15px;
+	background: blue;
+	font: 8pt ;
+	color: yellow;
+	font-size: 18pt;
+}
+.login_form {
+
+	margin:20% auto;
+	width:60%
+}
+.login_form_backbutton {
+
+	width:25%;
+	height: 50px;
+	border-radius: 15px;
+	background: blue;
+	font: 8pt;
+	color: yellow;
+	font-size: 18pt;
+}
+.login_form_input {
+
+	border-color: blue;
+	height: 30px;
+	border-radius: 15px;
+	border-width: 2px;
+	
+}
+.submit {
+
+	width:25%;
+	height: 50px;
+	border-radius: 15px;
+	background: blue;
+	font: 8pt ;
+	color: yellow;
+	font-size: 18pt;
+}
+.gameplay {
+	
+	margin:5% auto;
+	width:80%
+}
+.gameplay_backbutton {
+
+	width:25%;
+	height: 50px;
+	border-radius: 15px;
+	background: blue;
+	font: 8pt;
+	color: yellow;
+	font-size: 18pt;
+}

@@ -1,0 +1,12 @@
+<fest:template xmlns:fest="http://fest.mail.ru">
+	<div class="login_form">
+	<h1> Log into the game</h1>	
+		<form action="/api/v1/auth/signin" method="POST">
+			<label for="login">Login</label><input class="login_form_input" name="login" maxlength="30" type="text"></input><p/>
+			
+			<button class="submit" class="btn">Log in</button><p/>			
+		</form>
+		<a href="#"><button class="login_form_backbutton">Back</button></a>
+	</div>
+	
+</fest:template>

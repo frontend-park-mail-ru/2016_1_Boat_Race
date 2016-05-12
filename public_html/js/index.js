@@ -1,29 +1,65 @@
+var $page = $('#page'),
+currentScreen = 'main';
+showMainScreen;
+
 function showScoreboardScreen() {
-	// TODO
+	
+	hideMainScreen(); 
+	currentScreen = 'scoreboard';
+	$page.html(scoreboardTmpl()); 
+	$page.find('.js-back').on('click', showMainScreen);
 }
+
 function hideScoreboardScreen() {
-	// TODO
+	
+	$page.find('.js-back').off('click', showMainScreen)
 }
 
 function showGameScreen() {
-	// TODO
+	
+	hideMainScreen(); 
+	currentScreen = 'game';
+	$page.html(gameTmpl()); 
+	$page.find('.js-back').on('click', showMainScreen);
 }
+
 function hideGameScreen() {
-	// TODO
+	
+	$page.find('.js-back').off('click', showMainScreen)
 }
 
 function showLoginScreen() {
-	// TODO
+	
+	hideMainScreen(); 
+	currentScreen = 'login';
+	$page.html(loginTmpl()); 
+	$page.find('.js-back').on('click', showMainScreen);
 }
+
 function hideLoginScreen() {
-	// TODO
+	
+	$page.find('.js-back').off('click', showMainScreen)
 }
 
 function showMainScreen() {
-	// TODO
+	alert("Приветствую!")
+	if (currentScreen === 'scoreboard') {
+		hideScoreboardScreen();
+	} else if (currentScreen === 'game') {
+		hideGameScreen();
+	} else if (currentScreen === 'login') {
+		hideLoginScreen();
+	}
+	currentScreen = 'main';
+	$page.html(mainTmpl());
+	$page.find('.js-scoreboard').on('click', showScoreBoardScreen);
+	$page.find('.js-start-game').on('click', showGameScreen);
+	$page.find('.js-login').on('click', showLoginScreen);
 }
 
 function hideMainScreen() {
-	// TODO
-}
 
+	$page.find('.js-scoreboard').off('click', showScoreBoardScreen);
+	$page.find('.js-start-game').off('click', showGameScreen);
+	$page.find('.js-login').off('click', showLoginScreen);
+}

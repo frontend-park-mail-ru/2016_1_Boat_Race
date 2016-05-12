@@ -1,3 +1,7 @@
-<fest:template xmlns:fest="http://fest.mail.ru">
-    <div id="main"></div>
+<fest:template xmlns:fest="http://fest.mail.ru" context_name="json">
+	<div class="menu">
+		<a href="#scoreboard"><button class="menu_button">Best Players</button></a><p/>
+		<a href="#game"><button class="menu_button">Game</button></a><p/>
+		<a href="#login"><button class="menu_button">Log in</button></a><p/>
+	</div>
 </fest:template>

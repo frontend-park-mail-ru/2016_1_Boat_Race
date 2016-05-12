@@ -1,0 +1,39 @@
+<!DOCTYPE  html>
+<html>
+<head>
+    	<meta charset="utf-8" />
+	<title>Boat Racing Main Menu</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/lib/require.js" data-main="js/main"></script>
+	<script src="//localhost:35729/livereload.js"></script> 
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/tmpl/main.js"></script>
+	<script src="js/tmpl/login.js"></script>
+	<script src="js/tmpl/game.js"></script>
+	<script src="js/tmpl/scoreboard.js"></script>
+	<script src="/gamescreens.js"></script>
+	<style>
+		body{background: url(/Image/picture.jpg) no-repeat;
+			background-size:100%;
+		}
+	</style>
+</head>
+<body  background-size=100%>
+  	   	
+	<script>
+		var $page = $('#page');
+		$page.html(mainTmpl());
+	</script>	
+	
+	<div id="page">
+		<div class="menu">
+			<a href="#scoreboard"><button class="menu_button">Best Players</button></a><p>
+			<a href="#game"><button class="menu_button">Game</button></a><p>
+			<a href="#login"><button class="menu_button">Log in</button></a><p>
+		</div>
+	</div>
+	
+    
+</body>
+</html>
